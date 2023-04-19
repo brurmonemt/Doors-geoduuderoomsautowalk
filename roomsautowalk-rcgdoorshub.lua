@@ -1,5 +1,5 @@
 
--- 
+-- Thank you for creating this awesome script geoduude!
 
 local PathfindingService = game:GetService("PathfindingService")
 local VirtualInputManager = game:GetService('VirtualInputManager')
