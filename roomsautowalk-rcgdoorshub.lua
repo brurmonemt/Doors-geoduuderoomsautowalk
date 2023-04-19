@@ -1,21 +1,5 @@
 
--- Made by geodude#2619
--- Thanks lolcat, kardin!
-
-if game.PlaceId ~= 6839171747 or game.ReplicatedStorage.GameData.Floor.Value ~= "Rooms" then
-	game.StarterGui:SetCore("SendNotification", { Title = "Invalid Place"; Text = "The game detected appears to not be rooms. Please execute this while in rooms!" })
-	
-	local Sound = Instance.new("Sound")
-	Sound.Parent = game.SoundService
-	Sound.SoundId = "rbxassetid://550209561"
-	Sound.Volume = 5
-	Sound.PlayOnRemove = true
-	Sound:Destroy()
-	
-	return
-elseif workspace:FindFirstChild("PathFindPartsFolder") then
-	return
-end
+-- 
 
 local PathfindingService = game:GetService("PathfindingService")
 local VirtualInputManager = game:GetService('VirtualInputManager')
@@ -40,7 +24,7 @@ Folder.Parent = workspace
 Folder.Name = "PathFindPartsFolder"
 
 if LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Modules:FindFirstChild("A90") then
-    LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Modules.A90.Name = "lol"
+    LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Modules.A90.Name = "lol" -- l a90
 end
 
 function getLocker()
