@@ -77,7 +77,7 @@ LatestRoom:GetPropertyChangedSignal("Value"):Connect(function()
         Sound.PlayOnRemove = true
         Sound:Destroy()
         
-UILib:Notify({
+RayfieldUILib:Notify({
    Title = "RCG Doors Hub - 'The Rooms' AutoWalk",
    Content = "AutoWalk finished. This script was made by geoduude. Give him the recognition @ youtube.com/geoduude!",
    Duration = 6.5,
